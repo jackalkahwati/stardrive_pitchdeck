@@ -351,7 +351,7 @@ export default function SlidePresentation() {
                     </div>
                     <div className="flex flex-col h-full flex-grow">
                       <Image 
-                        src="/RAILGUN.gif" 
+                        src="RAILGUN.gif" 
                         alt="Railgun Technology" 
                         width={400} 
                         height={250} 
