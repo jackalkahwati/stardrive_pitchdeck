@@ -64,19 +64,19 @@ export default function SlidePresentation() {
     <div className="flex min-h-screen flex-col bg-[#0a1929]">
       <div className="flex-1 flex flex-col">
         {/* Slide container */}
-        <div className="flex-1 flex items-center justify-center p-4 md:p-8">
-          <div className="bg-gradient-to-br from-[#0f2942] to-[#071525] rounded-xl shadow-2xl w-full max-w-7xl aspect-[16/9] overflow-hidden relative border border-[#1e3a5f]">
+        <div className="flex-1 flex items-center justify-center p-2 md:p-4 lg:p-8">
+          <div className="bg-gradient-to-br from-[#0f2942] to-[#071525] rounded-xl shadow-2xl w-full max-w-7xl overflow-hidden relative border border-[#1e3a5f] min-h-[80vh] md:min-h-0">
             {/* Background grid pattern */}
             <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-repeat opacity-5"></div>
 
             {/* Slide 1: Title */}
             {currentSlide === 0 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
-                  <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
-                    <Zap className="h-6 w-6 text-white" />
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
+                  <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
+                    <Zap className="h-5 w-5 text-white" />
                   </div>
-                  <span className="ml-3 text-xl font-bold text-white tracking-wider">STARDRIVE</span>
+                  <span className="ml-2 text-sm font-bold text-white tracking-wider">STARDRIVE</span>
                 </div>
 
                 <div className="flex-1 flex flex-col items-center justify-center text-center">
@@ -117,19 +117,19 @@ export default function SlidePresentation() {
 
             {/* Slide 2: Executive Summary - NEW */}
             {currentSlide === 1 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
                   <span className="ml-2 text-sm font-bold text-white tracking-wider">STARDRIVE</span>
                 </div>
 
-                <div className="mt-12">
+                <div className="mt-2 md:mt-4 lg:mt-8">
                   <div className="inline-block px-4 py-1 bg-primary/20 rounded-full border border-primary/30 mb-2">
                     <span className="text-sm font-medium text-primary">EXECUTIVE SUMMARY</span>
                   </div>
-                  <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">Investment & Market Snapshot</h2>
+                  <h2 className="text-xl md:text-2xl font-bold tracking-tight mb-4 text-white">Investment & Market Snapshot</h2>
                 </div>
 
                 <div className="flex-1 flex flex-col justify-center">
@@ -198,19 +198,19 @@ export default function SlidePresentation() {
 
             {/* Slide 3: Problem & Solution */}
             {currentSlide === 2 && (
-              <div className="h-full w-full flex flex-col p-8 md:p-12 relative z-10">
-                <div className="absolute top-8 left-12 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-12 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
                   <span className="ml-2 text-sm font-bold text-white tracking-wider">STARDRIVE</span>
                 </div>
 
-                <div className="mt-16">
+                <div className="mt-2 md:mt-4 lg:mt-8">
                   <div className="inline-block px-4 py-1 bg-primary/20 rounded-full border border-primary/30 mb-2">
                     <span className="text-sm font-medium text-primary">PROBLEM & SOLUTION</span>
                   </div>
-                  <h2 className="text-3xl font-bold tracking-tight mb-8 text-white">Space Access Challenge</h2>
+                  <h2 className="text-xl md:text-3xl font-bold tracking-tight mb-8 text-white">Space Access Challenge</h2>
                 </div>
 
                 <div className="flex-1 flex flex-col md:flex-row gap-6">
@@ -246,19 +246,19 @@ export default function SlidePresentation() {
 
             {/* Slide 4: Key Market Drivers */}
             {currentSlide === 3 && (
-              <div className="h-full w-full flex flex-col p-8 md:p-12 relative z-10">
-                <div className="absolute top-8 left-12 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-12 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
                   <span className="ml-2 text-sm font-bold text-white tracking-wider">STARDRIVE</span>
                 </div>
 
-                <div className="mt-16">
+                <div className="mt-2 md:mt-4 lg:mt-8">
                   <div className="inline-block px-4 py-1 bg-primary/20 rounded-full border border-primary/30 mb-2">
                     <span className="text-sm font-medium text-primary">MARKET DRIVERS</span>
                   </div>
-                  <h2 className="text-3xl font-bold tracking-tight mb-8 text-white">Key Strategic Challenges</h2>
+                  <h2 className="text-xl md:text-3xl font-bold tracking-tight mb-8 text-white">Key Strategic Challenges</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -328,8 +328,8 @@ export default function SlidePresentation() {
 
             {/* Slide 5: Replaced with Technology Applications content */}
             {currentSlide === 4 && (
-              <div className="h-full w-full flex flex-col p-4 md:p-8 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-8 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -430,20 +430,20 @@ export default function SlidePresentation() {
 
             {/* Slide 6: Competitive Advantage (Index 5) */}
             {currentSlide === 5 && (
-              <div className="h-full w-full flex flex-col p-4 md:p-8 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-8 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
                   <span className="ml-2 text-sm font-bold text-white tracking-wider">STARDRIVE</span>
                 </div>
-                <div className="mt-12">
+                <div className="mt-2 md:mt-4 lg:mt-8">
                   <div className="inline-block px-4 py-1 bg-primary/20 rounded-full border border-primary/30 mb-2">
                     <span className="text-sm font-medium text-primary">COMPETITIVE ADVANTAGE</span>
                   </div>
-                  <h2 className="text-2xl font-bold tracking-tight mb-6 text-white">Market Differentiation</h2>
+                  <h2 className="text-xl md:text-2xl font-bold tracking-tight mb-6 text-white">Market Differentiation</h2>
                 </div>
-                <div className="overflow-x-auto overflow-y-visible bg-white/5 p-2 md:p-6 rounded-lg border border-gray-800">
+                <div className="overflow-auto bg-white/5 p-2 md:p-4 lg:p-6 rounded-lg border border-gray-800">
                   <table className="w-full border-collapse min-w-[600px]">
                     <thead>
                       <tr className="border-b border-gray-700">
@@ -519,8 +519,8 @@ export default function SlidePresentation() {
 
             {/* Slide 7: TAM, SAM, SOM Analysis (Index 6) */}
             {currentSlide === 6 && (
-              <div className="h-full w-full flex flex-col p-4 md:p-8 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-8 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -640,8 +640,8 @@ export default function SlidePresentation() {
 
             {/* Slide 8: Immediate Revenue Opportunities (Index 7) */}
             {currentSlide === 7 && (
-              <div className="h-full w-full flex flex-col p-4 md:p-8 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-8 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -765,8 +765,8 @@ export default function SlidePresentation() {
 
             {/* Slide 9: Long-Term Revenue Upside (Index 8) */}
             {currentSlide === 8 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -878,8 +878,8 @@ export default function SlidePresentation() {
 
             {/* Slide 10: Product Development Roadmap (Index 9) */}
             {currentSlide === 9 && (
-              <div className="h-full w-full flex flex-col p-8 md:p-12 relative z-10">
-                <div className="absolute top-8 left-12 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-12 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -976,8 +976,8 @@ export default function SlidePresentation() {
 
             {/* Slide 11: Financial Projections (Index 10) */}
             {currentSlide === 10 && (
-              <div className="h-full w-full flex flex-col p-8 md:p-12 relative z-10">
-                <div className="absolute top-8 left-12 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-12 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -1042,8 +1042,8 @@ export default function SlidePresentation() {
 
             {/* Slide 12: Government & Institutional Validation (Index 11, formerly 12) */}
             {currentSlide === 11 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -1139,8 +1139,8 @@ export default function SlidePresentation() {
 
             {/* Slide 13: Funding Ask (Index 12, formerly 13) */}
             {currentSlide === 12 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -1214,8 +1214,8 @@ export default function SlidePresentation() {
 
             {/* Slide 14: Team (Index 13, formerly 15) - Rebuilt with new bios and layout */}
             {currentSlide === 13 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Users className="h-5 w-5 text-white" />
                   </div>
@@ -1279,8 +1279,8 @@ export default function SlidePresentation() {
 
             {/* Slide 15: Contact Page (Index 14, formerly 16) */}
             {currentSlide === 14 && (
-              <div className="h-full w-full flex flex-col p-6 md:p-10 relative z-10">
-                <div className="absolute top-6 left-10 flex items-center">
+              <div className="h-full w-full flex flex-col p-4 md:p-6 lg:p-10 relative z-10 overflow-y-auto">
+                <div className="relative flex items-center mb-4 md:mb-8">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
@@ -1361,10 +1361,10 @@ export default function SlidePresentation() {
           </div>
         </div>
 
-        {/* Navigation controls - Updated */}
-        <div className="flex items-center justify-between p-4 bg-[#0a1929] border-t border-[#1e3a5f] print:hidden">
-          {/* ... Prev/Next buttons ... */}
-          <div className="flex items-center gap-2">
+        {/* Navigation controls - Updated for better mobile experience */}
+        <div className="flex flex-col sm:flex-row items-center justify-between p-2 sm:p-4 bg-[#0a1929] border-t border-[#1e3a5f] print:hidden gap-2">
+          {/* Prev/Next buttons for all screen sizes */}
+          <div className="flex items-center gap-2 order-1 sm:order-none">
             <Button
               variant="outline"
               size="icon"
@@ -1390,7 +1390,8 @@ export default function SlidePresentation() {
             </Button>
           </div>
 
-          <div className="flex items-center gap-2">
+          {/* Full navigation visible only on sm and up */}
+          <div className="hidden sm:flex flex-wrap items-center gap-2">
             <Button
               variant="outline"
               size="sm"
